@@ -1,5 +1,8 @@
 # App was only tested on Android
 
++ ## Shows state of a queue
++ ## Notifies you
+
 ## Setup and run on device instructions
 
 ```
