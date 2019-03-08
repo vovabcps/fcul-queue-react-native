@@ -67,12 +67,11 @@ export default class WaitScreen extends Component {
         if (falta < 4 && this.state.sendNotification && this.state.params.notify) {
             PushNotification.localNotification({
                 id: '7878',
-                vibrate: false,
-                playSound: false,
-                ongoing: true,
-                actions: "['Cancelar']",
-                message: this.state.senha_atual.toString(),
+                vibrate: true,
+                playSound: true,
+                message: "Senha atual: " + this.state.senha_atual.toString(),
             });
+            this.setState({sendNotification: false})
         }
     }
 
